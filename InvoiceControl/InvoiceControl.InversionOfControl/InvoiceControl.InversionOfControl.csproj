@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\InvoiceControl.Application\InvoiceControl.Application.csproj" />
+    <ProjectReference Include="..\InvoiceControl.Data.Dao\InvoiceControl.Data.Dao.csproj" />
+    <ProjectReference Include="..\InvoiceControl.Data.Repository\InvoiceControl.Data.Repository.csproj" />
+    <ProjectReference Include="..\InvoiceControl.Data\InvoiceControl.Data.csproj" />
+  </ItemGroup>
+
+</Project>
