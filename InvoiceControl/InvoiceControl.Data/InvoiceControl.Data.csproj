@@ -10,4 +10,8 @@
     <ProjectReference Include="..\InvoiceControl.Dto\InvoiceControl.Dto.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Mappings\" />
+  </ItemGroup>
+
 </Project>
