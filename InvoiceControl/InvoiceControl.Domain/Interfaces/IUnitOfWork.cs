@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace InvoiceControl.Domain.Interfaces
 {
-  public interface IReceiverRepository
+  public interface IUnitOfWork : IDisposable
   {
+    Task<bool> Commit();
+    Task Rollback();
   }
 }

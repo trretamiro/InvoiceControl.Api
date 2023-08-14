@@ -1,7 +1,7 @@
 using InvoiceControl.Api.Configurations;
 using InvoiceControl.Data;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
+using AutoMapper.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,11 +20,14 @@ builder.Services.AddControllers();
 string stringDeConexao = builder.Configuration.GetConnectionString("InvoiceConnection")!;
 builder.Services.AddDbContext<InvoiceContext>(db => db.UseSqlServer(stringDeConexao));
 
-// .NET Native DI Abstraction
-//builder.Services.AddDependencyInjectionConfiguration();
+//DI Abstraction
+builder.Services.AddDependencyInjectionConfiguration();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
+
+// AutoMapper Settings
+builder.Services.AddAutoMapperConfiguration();
 
 // Swagger Config
 builder.Services.AddSwaggerGen();

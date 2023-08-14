@@ -1,4 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using InvoiceControl.Application.Interfaces;
+using InvoiceControl.Dto.Dto;
+using InvoiceControl.Dto.Validation;
+using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -8,6 +11,13 @@ namespace InvoiceControl.Api.Controllers
   [ApiController]
   public class InvoiceController : ControllerBase
   {
+    private readonly IInvoiceAppService _invoiceAppService;
+
+    public InvoiceController(IInvoiceAppService invoiceAppService)
+    {
+      _invoiceAppService = invoiceAppService;
+    }
+
     // GET: api/<InvoiceController>
     [HttpGet]
     public IEnumerable<string> Get()
@@ -24,8 +34,9 @@ namespace InvoiceControl.Api.Controllers
 
     // POST api/<InvoiceController>
     [HttpPost]
-    public void Post([FromBody] string value)
+    public IActionResult Post([FromBody] InvoiceServicesDto dto)
     {
+      return Ok(_invoiceAppService.Register(dto));
     }
 
     // PUT api/<InvoiceController>/5

@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InvoiceControl.Domain.Interfaces
+namespace InvoiceControl.Dto.Dto
 {
-  public interface IAddressRepository
+  public class ReceiverDto
   {
+
   }
 }

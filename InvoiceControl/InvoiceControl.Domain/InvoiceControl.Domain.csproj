@@ -7,8 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Commands\Validations\" />
+    <Folder Include="Validations\" />
     <Folder Include="Events\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\InvoiceControl.Dto\InvoiceControl.Dto.csproj" />
   </ItemGroup>
 
 </Project>

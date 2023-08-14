@@ -1,8 +1,7 @@
-﻿using InvoiceControl.Data.Mappings;
+﻿using Abp.Domain.Uow;
+using InvoiceControl.Data.Mappings;
 using InvoiceControl.Domain.Models;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Options;
 using System.ComponentModel.DataAnnotations;
 
 namespace InvoiceControl.Data
@@ -18,13 +17,14 @@ namespace InvoiceControl.Data
     #endregion
 
     public InvoiceContext(DbContextOptions<InvoiceContext> options) : base(options)
-    { }
+    {      
+    }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-      //base.OnModelCreating(modelBuilder);
+      base.OnModelCreating(modelBuilder);
 
-      //modelBuilder.Ignore<ValidationResult>();
+      modelBuilder.Ignore<ValidationResult>();
 
       #region Generated Configuration
       modelBuilder.ApplyConfiguration(new InvoiceServicesMap());

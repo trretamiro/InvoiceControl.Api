@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using InvoiceControl.Dto.Dto;
+using InvoiceControl.Dto.Validation;
 
 namespace InvoiceControl.Application.Interfaces
 {
   public interface IInvoiceAppService
   {
-
+    public ValidationResult Register(InvoiceServicesDto invoiceServicesDto);
   }
 }

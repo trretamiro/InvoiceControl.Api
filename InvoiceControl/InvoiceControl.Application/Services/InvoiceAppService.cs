@@ -1,37 +1,40 @@
 ﻿using InvoiceControl.Application.Interfaces;
-using InvoiceControl.Domain.Interfaces;
 using InvoiceControl.Domain.Models;
-using System.ComponentModel.DataAnnotations;
-using System.Runtime.InteropServices;
+using AutoMapper;
+using InvoiceControl.Dto.Dto;
+using InvoiceControl.Domain.Interfaces.Repositories;
+using InvoiceControl.Dto.Validation;
 
 namespace InvoiceControl.Application.Services
 {
   public class InvoiceAppService : IInvoiceAppService
   {
-    private readonly IInvoiceAppService _invoiceAppService;
-    private readonly IInvoiceRepository _invoiceRepository;
-    private readonly IAddressRepository _addressRepository;
-    private readonly IReceiverRepository _receiverRepository;
-    private readonly IProviderRepository _providerRepository;
+    private readonly IInvoiceServicesRepository _invoiceRepository;
+    private readonly IMapper _mapper;
 
-    public InvoiceAppService(IInvoiceAppService invoiceAppService, 
-      IInvoiceRepository invoiceRepository, 
-      IAddressRepository addressRepository, 
-      IReceiverRepository receiverRepository, 
-      IProviderRepository providerRepository)
+    public InvoiceAppService(IInvoiceServicesRepository invoiceRepository,
+      IMapper mapper)
     {
-      _invoiceAppService = invoiceAppService;
       _invoiceRepository = invoiceRepository;
-      _addressRepository = addressRepository;
-      _receiverRepository = receiverRepository;
-      _providerRepository = providerRepository;
+      _mapper = mapper;
     }
 
-    public void Register(InvoiceServices customerViewModel)
+    public ValidationResult Register(InvoiceServicesDto invoiceServicesDto)
     {
+      var validation = new ValidationResult();
 
+      try
+      {
+        //var registerInvoiceService = _mapper.Map<InvoiceServices>(invoiceServicesDto);
+        var conclusion = _invoiceRepository.IncludeInvoiceService(new InvoiceServices());
+        return validation;
+      }
+      catch (Exception ex)
+      {
+        validation.AddError(ex.Message.ToString());
+        return validation;
+      }
     }
-
 
   }
 }

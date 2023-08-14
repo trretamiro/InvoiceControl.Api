@@ -1,16 +1,14 @@
 ﻿using AutoMapper;
-using InvoiceControl.Dto.Dto;
 using InvoiceControl.Domain.Models;
+using InvoiceControl.Dto.Dto;
 
 namespace InvoiceControl.Application.Mappings
 {
-  public class InvoiceMap : Profile
+  public class ProviderMap : Profile
   {
-    public InvoiceMap() 
+    public ProviderMap()
     {
       CreateMap<InvoiceServicesDto, InvoiceServices>();
-        //.ForMember(x => x.Provider, x => x.Ignore())
-        //.ForMember(x => x.Receiver, x => x.Ignore());
 
       CreateMap<InvoiceServices, InvoiceServicesDto>();
     }
