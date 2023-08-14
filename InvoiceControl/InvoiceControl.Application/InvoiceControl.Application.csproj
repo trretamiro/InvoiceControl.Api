@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\InvoiceControl.Domain\InvoiceControl.Domain.csproj" />
     <ProjectReference Include="..\InvoiceControl.Dto\InvoiceControl.Dto.csproj" />
   </ItemGroup>

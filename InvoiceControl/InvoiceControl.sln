@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoiceControl.Api", "InvoiceControl.Api\InvoiceControl.Api.csproj", "{B13EB28A-FCBE-4577-9C7E-05F350EFA567}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvoiceControl.Api", "InvoiceControl.Api\InvoiceControl.Api.csproj", "{B13EB28A-FCBE-4577-9C7E-05F350EFA567}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Tests", "0 - Tests", "{C97AEF2C-C151-432E-89B0-7C3D81165816}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitaryTests", "UnitaryTests\UnitaryTests.csproj", "{69932485-1203-49C0-B144-F2A2669FE9AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitaryTests", "UnitaryTests\UnitaryTests.csproj", "{69932485-1203-49C0-B144-F2A2669FE9AC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation", "1 - Presentation", "{F63841D6-83A0-4A6F-A7F6-8142F72BADE8}"
 EndProject
@@ -17,25 +17,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infrastructure", "4 - Infrastructure", "{778E8957-038E-4473-9B9E-1E45DA4B3CB8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoiceControl.Application", "InvoiceControl.Application\InvoiceControl.Application.csproj", "{29D86E7F-DDC9-4F9B-89D3-8030A9BD5721}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvoiceControl.Application", "InvoiceControl.Application\InvoiceControl.Application.csproj", "{29D86E7F-DDC9-4F9B-89D3-8030A9BD5721}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoiceControl.Domain", "InvoiceControl.Domain\InvoiceControl.Domain.csproj", "{961300DC-559C-465E-9FB1-B6B65AFF1C9A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvoiceControl.Domain", "InvoiceControl.Domain\InvoiceControl.Domain.csproj", "{961300DC-559C-465E-9FB1-B6B65AFF1C9A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - Data", "4.1 - Data", "{632A04FE-BBDE-4D43-AFFA-ABC5B2A1CCC0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoiceControl.Data", "InvoiceControl.Data\InvoiceControl.Data.csproj", "{EC5EE0AF-5282-4DB2-85F1-A1F93C124C22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvoiceControl.Data", "InvoiceControl.Data\InvoiceControl.Data.csproj", "{EC5EE0AF-5282-4DB2-85F1-A1F93C124C22}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 - Integrations", "4.2 - Integrations", "{A341110F-E632-4295-B40F-CE4A40510BAD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.3 - Transversal", "4.3 - Transversal", "{1ADAFFE5-481D-4568-8547-071292AFEFDA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoiceControl.InversionOfControl", "InvoiceControl.InversionOfControl\InvoiceControl.InversionOfControl.csproj", "{F97C90CD-E693-4396-B14F-C7115F6F59D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvoiceControl.IoC", "InvoiceControl.InversionOfControl\InvoiceControl.IoC.csproj", "{F97C90CD-E693-4396-B14F-C7115F6F59D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoiceControl.Dto", "InvoiceControl.Dto\InvoiceControl.Dto.csproj", "{67AE67E4-CB0B-419C-8D31-7391749D9827}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvoiceControl.Dto", "InvoiceControl.Dto\InvoiceControl.Dto.csproj", "{67AE67E4-CB0B-419C-8D31-7391749D9827}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoiceControl.Data.Dao", "InvoiceControl.Data.Dao\InvoiceControl.Data.Dao.csproj", "{17F240DE-1BE3-4CA8-9978-2EFFB64843AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvoiceControl.Data.Dao", "InvoiceControl.Data.Dao\InvoiceControl.Data.Dao.csproj", "{17F240DE-1BE3-4CA8-9978-2EFFB64843AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoiceControl.Data.Repository", "InvoiceControl.Data.Repository\InvoiceControl.Data.Repository.csproj", "{DDADF681-F46C-4AFE-8508-1D1D582406A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvoiceControl.Data.Repository", "InvoiceControl.Data.Repository\InvoiceControl.Data.Repository.csproj", "{DDADF681-F46C-4AFE-8508-1D1D582406A1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

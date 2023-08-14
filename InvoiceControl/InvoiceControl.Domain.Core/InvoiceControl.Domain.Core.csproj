@@ -7,8 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Commands\Validations\" />
     <Folder Include="Events\" />
+    <Folder Include="Models\" />
   </ItemGroup>
 
 </Project>
